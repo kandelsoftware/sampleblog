@@ -3,7 +3,7 @@
 
   <%if @post.errors.any? %>
   <div id="errors"> 
-  <h2><%= pluralze(@post.errors.count,"error") %></h2>
+  <h2><%= pluralize(@post.errors.count,"error") %></h2>
      <ul>
         <%@post.errors.full_messages.each  do |msg|%>
        <li> <%= msg %></li>
