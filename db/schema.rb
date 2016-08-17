@@ -28,10 +28,4 @@ ActiveRecord::Schema.define(version: 20160816195435) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "titles", force: :cascade do |t|
-    t.text     "body"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
 end
